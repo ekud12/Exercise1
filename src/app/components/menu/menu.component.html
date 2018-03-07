@@ -1,0 +1,18 @@
+<mat-grid-list cols="5" rowHeight="1:2" class="menu" gutterSize="20px">
+  <mat-grid-tile [@itemAnim] (mouseover)="toggleHover(0)" (mouseout)="toggleHoverOff(0)" [ngStyle]="{'background-image': 'url(' + (isHovered[0] ? parisMap: paris) + ')'}"
+    [routerLink]="[ '/city', 'Paris'] ">
+    Paris
+  </mat-grid-tile>
+  <mat-grid-tile [@itemAnim] (mouseover)="toggleHover(1)" (mouseout)="toggleHoverOff(1)" [ngStyle]="{'background-image': 'url(' + (isHovered[1] ? londonMap: london) + ')'}"
+    [routerLink]="[ '/city',
+    'London'] ">London</mat-grid-tile>
+  <mat-grid-tile [@itemAnim] (mouseover)="toggleHover(2)" (mouseout)="toggleHoverOff(2)" [ngStyle]="{'background-image': 'url(' + (isHovered[2] ? athensMap: athens) + ')'}"
+    [routerLink]="[ '/city',
+    'Athens'] ">Athens</mat-grid-tile>
+  <mat-grid-tile [@itemAnim] (mouseover)="toggleHover(3)" (mouseout)="toggleHoverOff(3)" [ngStyle]="{'background-image': 'url(' + (isHovered[3] ? amsterdamMap: amsterdam) + ')'}"
+    [routerLink]="[ '/city',
+    'Amsterdam'] ">Amsterdam</mat-grid-tile>
+  <mat-grid-tile [@itemAnim] (mouseover)="toggleHover(4)" (mouseout)="toggleHoverOff(4)" [ngStyle]="{'background-image': 'url(' + (isHovered[4] ? usaMap: usa) + ')'}"
+    [routerLink]="[ '/city',
+    'New York'] ">New York</mat-grid-tile>
+</mat-grid-list>

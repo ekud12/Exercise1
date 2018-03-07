@@ -1,0 +1,21 @@
+mat-grid-tile {
+  color: white;
+  background-size: cover;
+  font-size: 50px;
+  font-weight: bolder;
+  border: 2px solid rgba(48, 48, 48, 0.692);
+  opacity: 0.8;
+  transition: transform 0.5s;
+}
+
+mat-grid-tile:hover {
+  border: 3px solid rgba(243, 243, 243, 0.692);
+  transform: scale(1.1);
+  z-index: 9999 !important;
+  color: black;
+}
+
+.menu {
+  margin-right: 50px;
+  margin-left: 50px;
+}

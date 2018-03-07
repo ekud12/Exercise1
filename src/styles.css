@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import url('https://fonts.googleapis.com/css?family=Mina|Montserrat');
+body {
+  background-image: url('../src/assets/bg.jpg');
+  background-size: cover;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+}
